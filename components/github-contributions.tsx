@@ -51,13 +51,6 @@ export function GitHubContributions({ username }: { username: string }) {
     // fetch immediately
     fetchContributions();
   
-    // refresh every 1 minute (60000 ms)
-    const interval = setInterval(() => {
-      fetchContributions();
-    }, 6000);
-  
-    // cleanup on unmount or username change
-    return () => clearInterval(interval);
   
   }, [username]);
   
