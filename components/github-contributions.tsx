@@ -22,33 +22,45 @@ export function GitHubContributions({ username }: { username: string }) {
   useEffect(() => {
     const fetchContributions = async () => {
       try {
-        setLoading(true)
-        setError(null)
-        const response = await fetch(`/api/github-contributions?username=${username}`)
-
-        const data = await response.json()
-
+        setLoading(true);
+        setError(null);
+  
+        const response = await fetch(`/api/github-contributions?username=${username}`);
+        const data = await response.json();
+  
         if (data.mockData) {
-          setIsMockData(true)
+          setIsMockData(true);
+  
           if (data.error === "GitHub token not configured") {
             setError(
-              "GitHub token not configured. Add your Personal Access Token to environment variables to see real data.",
-            )
+              "GitHub token not configured. Add your Personal Access Token to environment variables to see real data."
+            );
           }
         }
-
-        setTotalContributions(data.totalContributions)
-        setWeeks(data.weeks)
+  
+        setTotalContributions(data.totalContributions);
+        setWeeks(data.weeks);
       } catch (err) {
-        console.error("[v0] Error loading contributions:", err)
-        setError(err instanceof Error ? err.message : "Failed to load contributions")
+        console.error("[v0] Error loading contributions:", err);
+        setError(err instanceof Error ? err.message : "Failed to load contributions");
       } finally {
-        setLoading(false)
+        setLoading(false);
       }
-    }
-
-    fetchContributions()
-  }, [username])
+    };
+  
+    // fetch immediately
+    fetchContributions();
+  
+    // refresh every 1 minute (60000 ms)
+    const interval = setInterval(() => {
+      fetchContributions();
+    }, 6000);
+  
+    // cleanup on unmount or username change
+    return () => clearInterval(interval);
+  
+  }, [username]);
+  
 
   const getLevelColor = (level: string) => {
     switch (level) {
