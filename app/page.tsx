@@ -391,7 +391,7 @@ export default function PortfolioPage() {
 
               {
                 title: "Recap.AI",
-                url: "https://recap-ai-1.onrender.com",
+                url: "https://recap-ai-omega.vercel.app/",
                 description:
                   "A powerful automation bot that joins Google Meet sessions, records and transcribes audio. Built to automate meeting summarization with browser control via Selenium.",
                 tags: [
