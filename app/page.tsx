@@ -194,7 +194,7 @@ export default function PortfolioPage() {
                   </Link>{" "}
                   and{" "}
                   <Link
-                    href="https://amiprints.in"
+                    href="https://amiprint.in"
                     target="_blank"
                     className="underline hover:text-primary transition-colors"
                   >
