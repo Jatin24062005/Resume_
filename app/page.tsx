@@ -300,7 +300,7 @@ export default function PortfolioPage() {
                     target="_blank"
                     className="inline-flex items-center gap-1.5 hover:underline transition-all duration-200"
                   >
-                    100xDevs Cohort 3.0
+                    100xDevs 
                     <ExternalLink className="size-3.5" />
                   </Link>
                   <Badge variant="secondary" className="ml-2">
