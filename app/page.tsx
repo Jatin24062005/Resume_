@@ -122,7 +122,7 @@ export default function PortfolioPage() {
 
           <Avatar className="size-28 rounded-lg transition-all duration-500 hover:scale-110 hover:rotate-3 hover:shadow-xl">
             <AvatarImage
-              src="/square-image_1.jpg"
+              src="/image.jpeg"
               alt="Jatin Kashyap"
             />
             <AvatarFallback>JK</AvatarFallback>

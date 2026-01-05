@@ -10,8 +10,8 @@ export const metadata: Metadata = {
   title: "Jatin | Full Stack Developer and DevOps Engineer",
   description:
     "Passionate Software Developer with a strong foundation in full-stack development, cloud computing, and DevOps practices. Proven track record in designing and implementing scalable, resilient, and user-centric applications.",
-      icons: { icon: "/square-image_1.jpg",
-     apple:"/square-image_1.jpg"
+      icons: { icon: "/image.jpeg",
+     apple:"/image.jpeg"
    },
 }
 
