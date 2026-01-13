@@ -372,22 +372,7 @@ export default function PortfolioPage() {
                   "API Monitoring",
                 ],
               },
-              {
-                title: "ShipDuniya",
-                url: "https://shipduniya.in/",
-                description:
-                  "A full-stack logistics platform with AWB generation, label printing, courier API integration, and an admin dashboard. Used in real-world shipping with full backend automation and PM2 on GCP.",
-                tags: [
-                  "Full Stack",
-                  "Node.js",
-                  "Express.js",
-                  "React",
-                  "MongoDB",
-                  "Docker",
-                  "GCP",
-                  "PM2",
-                ],
-              },
+              
 
               {
                 title: "Recap.AI",
@@ -402,6 +387,21 @@ export default function PortfolioPage() {
                   "MongoDB",
                   "REST API",
                   "Next.js",
+                ],
+              },{
+                title: "ShipDuniya",
+                url: "https://shipduniya.in/",
+                description:
+                  "A full-stack logistics platform with AWB generation, label printing, courier API integration, and an admin dashboard. Used in real-world shipping with full backend automation and PM2 on GCP.",
+                tags: [
+                  "Full Stack",
+                  "Node.js",
+                  "Express.js",
+                  "React",
+                  "MongoDB",
+                  "Docker",
+                  "GCP",
+                  "PM2",
                 ],
               },
               {
