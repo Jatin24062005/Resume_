@@ -111,7 +111,7 @@ export default function PortfolioPage() {
                 className="transition-all duration-300 hover:scale-110 hover:bg-accent hover:-rotate-6 bg-transparent"
               >
                 <Link
-                  href="https://drive.google.com/file/d/1RhUOmZYX0BzLzuJ64riEfURGKYAWvBEN/view"
+                  href="https://drive.google.com/file/d/1ZWReIrASmrx3uzDYnkNRPUeEy-LFisjH/view?usp=sharing"
                   target="_blank"
                 >
                   <FileText className="size-4" />
